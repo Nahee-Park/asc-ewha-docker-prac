@@ -1,0 +1,23 @@
+{
+  "name": "asc-ewha-docker-prac",
+  "version": "1.0.0",
+  "description": "aws student clubs ewha 2nd handson seminar docker practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nahee-Park/asc-ewha-docker-prac.git"
+  },
+  "author": "Nahee-Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nahee-Park/asc-ewha-docker-prac/issues"
+  },
+  "homepage": "https://github.com/Nahee-Park/asc-ewha-docker-prac#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
