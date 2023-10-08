@@ -18,3 +18,4 @@ EXPOSE 8080
 
 # Node.js 서버를 실행합니다.
 CMD ["node", "app.js"]
+
