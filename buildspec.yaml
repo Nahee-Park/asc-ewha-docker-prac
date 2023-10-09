@@ -5,7 +5,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
-      - echo $AWS_DEFAULT_REGION
+      # 941088547058.dkr.ecr.ap-northeast-2.amazonaws.com/asc-ewha-docker-prac 를 본인의 Repository URI로 변경
+      # ap-northeast-2을 본인의 region으로 변경
       - aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 941088547058.dkr.ecr.ap-northeast-2.amazonaws.com/asc-ewha-docker-prac
       - REPOSITORY_URI=941088547058.dkr.ecr.ap-northeast-2.amazonaws.com/asc-ewha-docker-prac
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
